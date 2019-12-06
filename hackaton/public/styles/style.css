@@ -49,8 +49,23 @@ a {
     .container .impact .litter-border {
       border: 1px solid grey;
       border-radius: 5px;
-      padding: 1em; }
+      padding: 1em;
+      box-shadow: -4px 10px 5px 0px rgba(0, 0, 0, 0.75); }
   .container hr {
     width: 50vw; }
+  .container .challenge-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .container .challenge-container p {
+      margin: 0 2em; }
+
+ion-icon {
+  color: #39CB5B; }
+
+.profile-console-icon {
+  float: right;
+  margin: 1em; }
 
 /*# sourceMappingURL=style.css.map */
