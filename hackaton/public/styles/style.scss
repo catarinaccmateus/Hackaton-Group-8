@@ -1,5 +1,5 @@
 $font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$link-color: #00b7ff;
+$main-color: #39cb5b;
 
 body {
   margin: 0;
@@ -8,7 +8,6 @@ body {
 }
 
 a {
-  color: $link-color;
   text-decoration: none;
 }
 
@@ -46,60 +45,70 @@ a {
 
   .profile-image {
     width: 50%;
-    height: 0 auto;
+    height: 10%;
     margin-top: 2em;
   }
 
   button {
-    background-color: #39cb5b;
-    border-radius: 5px;
+    background-color: white;
     border: none;
     padding: 10px;
-    color: white;
+    color: #39cb5b;
     margin: 1em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 80px;
   }
 
   span {
     color: grey;
     font-size: 14px;
-    font-style: italic;
   }
 
   // p {
   //   font-weight: bold;
   // }
+  .litter-points-number {
+    color: #39cb5b;
+  }
+
+  .impact-title {
+    font-weight: bold;
+  }
+
 
   .impact {
     margin: 1em;
     .litter-border {
-      border: 1px solid grey;
-      border-radius: 5px;
-      padding: 1em;
-      box-shadow: -4px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      padding: 0.5em;
+      box-shadow: 0px 1.52464px 11.4348px rgba(53, 53, 91, 0.16);
+      border-radius: 7.62319px;
+     width: 50vw;
     }
   }
 
   hr {
-    width: 50vw;
+    width: 60vw;
   }
 
+  .option {
+    width: 100vw;
+  }
   // .option-text {
   //   border-bottom: 1px solid grey;
   // }
   .challenge-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: space-between;
     p {
       margin: 0 2em;
     }
   }
 }
 
-ion-icon {
-  color: #39cb5b;
+ion-icon{
+  color: #787B86;
 }
 
 .container-1 {
@@ -121,12 +130,13 @@ ion-icon {
 .fa-1x {
   font-size: 1.5rem;
 }
+
+
+
 .navbar-toggler.toggler-example {
   cursor: pointer;
 }
-.dark-blue-text {
-  color: #0a38f5;
-}
+
 .dark-pink-text {
   color: #ac003a;
 }
@@ -139,4 +149,40 @@ ion-icon {
 .profile-console-icon {
   float: right;
   margin: 1em;
+}
+
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+
+///styling fot the sign in
+.input-box {
+  margin: 1em;
+}
+
+.sign-background-color{
+  background-color: green;
+}
+
+//confirmation page styling
+.confirmation-icon{
+  color: #39cb5b;
+  font-size: 10em;
+}
+
+.confirmation-text {
+  font-weight: bold;
+}
+
+.box-confirmation{
+  margin-top: 2em;
+  box-shadow: 0px 1.52464px 11.4348px rgba(53, 53, 91, 0.16);
+  border-radius: 7.62319px;
+}
+
+.confirmation-icons{
+  font-size: 1.5em;
 }

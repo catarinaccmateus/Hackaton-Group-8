@@ -107,5 +107,8 @@ router.get('/private', (req, res, next) => {
   res.render('private');
 });
 
+router.get('/confirmation', (req, res, next) => {
+  res.render('confirmation');
+});
 
 module.exports = router;

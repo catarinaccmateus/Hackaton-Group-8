@@ -4,7 +4,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
   text-decoration: none; }
 
 #map {
@@ -31,38 +30,44 @@ a {
   flex-direction: column; }
   .container .profile-image {
     width: 50%;
-    height: 0 auto;
+    height: 10%;
     margin-top: 2em; }
   .container button {
-    background-color: #39cb5b;
-    border-radius: 5px;
+    background-color: white;
     border: none;
     padding: 10px;
-    color: white;
-    margin: 1em; }
+    color: #39cb5b;
+    margin: 1em;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 80px; }
   .container span {
     color: grey;
-    font-size: 14px;
-    font-style: italic; }
+    font-size: 14px; }
+  .container .litter-points-number {
+    color: #39cb5b; }
+  .container .impact-title {
+    font-weight: bold; }
   .container .impact {
     margin: 1em; }
     .container .impact .litter-border {
-      border: 1px solid grey;
-      border-radius: 5px;
-      padding: 1em;
-      box-shadow: -4px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+      padding: 0.5em;
+      box-shadow: 0px 1.52464px 11.4348px rgba(53, 53, 91, 0.16);
+      border-radius: 7.62319px;
+      width: 50vw; }
   .container hr {
-    width: 50vw; }
+    width: 60vw; }
+  .container .option {
+    width: 100vw; }
   .container .challenge-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-between; }
     .container .challenge-container p {
       margin: 0 2em; }
 
 ion-icon {
-  color: #39cb5b; }
+  color: #787B86; }
 
 .container-1 {
   height: 300px;
@@ -83,9 +88,6 @@ ion-icon {
 .navbar-toggler.toggler-example {
   cursor: pointer; }
 
-.dark-blue-text {
-  color: #0a38f5; }
-
 .dark-pink-text {
   color: #ac003a; }
 
@@ -98,5 +100,30 @@ ion-icon {
 .profile-console-icon {
   float: right;
   margin: 1em; }
+
+button {
+  border: none;
+  background-color: transparent; }
+
+.input-box {
+  margin: 1em; }
+
+.sign-background-color {
+  background-color: green; }
+
+.confirmation-icon {
+  color: #39cb5b;
+  font-size: 10em; }
+
+.confirmation-text {
+  font-weight: bold; }
+
+.box-confirmation {
+  margin-top: 2em;
+  box-shadow: 0px 1.52464px 11.4348px rgba(53, 53, 91, 0.16);
+  border-radius: 7.62319px; }
+
+.confirmation-icons {
+  font-size: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
