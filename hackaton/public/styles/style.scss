@@ -9,4 +9,24 @@ body {
 
 a {
   color: $link-color;
+  text-decoration: none;
+}
+
+
+//join or create events page
+//map coordinates
+#map {
+  width: 100vw;
+  height: 80vh;
+}
+
+.buttons {
+  position: absolute;
+}
+.action-button {
+  border: 1px solid;
+  background-color: green;
+  padding: 10px;
+  border-radius: 3px;
+
 }
