@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 50px;
+  padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
@@ -9,15 +9,48 @@ a {
 
 #map {
   width: 100vw;
-  height: 80vh; }
+  height: 100vh; }
 
 .buttons {
-  position: absolute; }
+  position: absolute;
+  margin-top: 90vh; }
+  .buttons .action-button {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    color: white; }
+  .buttons .create {
+    background-color: #39CB5B; }
+  .buttons .join {
+    background-color: orange; }
 
-.action-button {
-  border: 1px solid;
-  background-color: green;
-  padding: 10px;
-  border-radius: 3px; }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .container .profile-image {
+    width: 50%;
+    height: 0 auto;
+    margin-top: 2em; }
+  .container button {
+    background-color: #39CB5B;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 1em; }
+  .container span {
+    color: grey;
+    font-size: 14px;
+    font-style: italic; }
+  .container .impact {
+    margin: 1em; }
+    .container .impact .litter-border {
+      border: 1px solid grey;
+      border-radius: 5px;
+      padding: 1em; }
+  .container hr {
+    width: 50vw; }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ $link-color: #00b7ff;
 
 body {
   margin: 0;
-  padding: 50px;
+  padding: 0;
   font-family: $font-sans;
 }
 
@@ -17,16 +17,74 @@ a {
 //map coordinates
 #map {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 }
 
 .buttons {
   position: absolute;
-}
-.action-button {
-  border: 1px solid;
-  background-color: green;
-  padding: 10px;
-  border-radius: 3px;
+  margin-top: 90vh;
+  .action-button {
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+  }
 
+  .create {
+    background-color: #39CB5B;
+  }
+  .join {
+    background-color: orange;
+  }
+}
+
+//styling the profile view
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .profile-image {
+    width: 50%;
+    height: 0 auto;
+    margin-top: 2em;;
+  }
+
+  button {
+    background-color: #39CB5B;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 1em;
+  }
+
+  span {
+    color: grey;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  // p {
+  //   font-weight: bold;
+  // }
+
+  .impact {
+
+    margin: 1em;
+    .litter-border {
+      border: 1px solid grey;
+      border-radius: 5px;
+      padding: 1em;
+    }
+  }
+
+  hr {
+    width: 50vw;
+  }
+
+  // .option-text {
+  //   border-bottom: 1px solid grey;
+  // }
 }
