@@ -126,4 +126,24 @@ button {
 .confirmation-icons {
   font-size: 1.5em; }
 
+.finish-text {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  color: grey;
+  font-weight: bold; }
+
+.background {
+  background-image: url("./../images/home.jpg");
+  background-size: cover;
+  width: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
