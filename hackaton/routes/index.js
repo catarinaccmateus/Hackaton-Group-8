@@ -103,7 +103,7 @@ const routeGuard = require('./../middleware/route-guard');
 // Private Page
 // Set a controller for the private page,
 // preceded by the middleware that prevents unauthenticated users to visit
-router.get('/private', routeGuard, (req, res, next) => {
+router.get('/private', (req, res, next) => {
   res.render('private');
 });
 

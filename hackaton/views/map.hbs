@@ -1,6 +1,29 @@
 <div class="d-flex justify-content-around">
     <div class="google-map games-page-map" id="map">
         <script>
+
+            const beaches = [
+                ["Alges", 38.695963, -9.231084],
+                ["Dafundo", 8.698508, -9.240115],
+                ["Cruz Quebrada", 38.699484, -9.251950],
+                ["Sao Bruno", 38.698132, -9.274451],
+                ["Caxais", 38.698648, -9.277961],
+                ["Giribita", 38.697331, -9.283358],
+                ["Paco de Arcos", 38.690173, -9.297087],
+                ["Santo Amaro de Oeiras", 38.684605, -9.311903],
+                ["Laje", 38.683363, -9.314335],
+                ["Torre", 38.675688, -9.323370],
+                ["Carcavelos", 38.679057, -9.335102],
+                ["Parede", 38.685197, -9.352885],
+                ["Avencas", 38.688642, -9.361134],
+                ["Estoril", 38.693448, -9.369196],
+                ["Azarujinha", 38.700546, -9.389120],
+                ["Poca", 38.702060, -9.391692],
+                ["Tamariz", 38.702638, -9.399148],
+                ["Moitas", 38.701868, -9.409629],
+                ["Conceicao", 38.699959, -9.416855],
+                ["Pescadores", 38.696495, -9.419833]
+            ]
             var map, infoWindow;
             let markersArray = [];
             function initMap() {
@@ -8,11 +31,14 @@
                     center: { lat: 38.6992185, lng: -9.2001777 },
                     zoom: 11
                 });
-                addMarker({ lat: 38.7552876, lng: -9.1571719 }, "red");
-                addMarker({ lat: 38.7358789, lng: -9.1682929 }, "red");
-                addMarker({ lat: 38.7268884, lng: -9.2113177 }, "red");
-                addMarker({ lat: 38.7241060, lng: -9.1345574 }, "red");
-                addMarker({ lat: 38.7402301, lng: -9.3611037 }, "red");
+                
+                 for (let i = 0; i < beaches.length; i++){
+                    let lat = beaches[i][1];
+                    let lng = beaches[i][2];
+
+                  addMarker({ lat: lat, lng: lng }, "red");
+                }
+
                 infoWindow = new google.maps.InfoWindow;
 
                 // Try HTML5 geolocation.
@@ -61,10 +87,10 @@
                 infoWindow.open(map);
             }
         </script>
-        
+
     </div>
     <div class="buttons">
-            <a href="#" class="action-button">Create Event</a>
-            <a href="#" class="action-button">Join Event</a>
-        </div>
+        <a href="#" class="action-button create">Create Event</a>
+        <a href="#" class="action-button join">Join Event</a>
+    </div>
 </div>
