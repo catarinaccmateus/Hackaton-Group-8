@@ -17,12 +17,14 @@ router.get('/sign-up', (req, res, next) => {
 });
 
 router.post('/sign-up', (req, res, next) => {
+  console.log('step1');
   const { name, email, password } = req.body;
   // We need to hash the password submitted by the user
   // so that it can be securely stored in the database
   bcryptjs
     .hash(password, 10)
     .then(hash => {
+      console.log('step2');
       // Now that we have the value of the hashed password,
       // create the user
       return User.create({
@@ -32,6 +34,7 @@ router.post('/sign-up', (req, res, next) => {
       });
     })
     .then(user => {
+      console.log('step3');
       // User was securely created
       // Save it's ID to the session (we call this process serialization),
       // so that it can later be loaded from the database and

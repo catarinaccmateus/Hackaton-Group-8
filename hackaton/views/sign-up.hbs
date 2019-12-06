@@ -1,11 +1,42 @@
-<h1>Sign up</h1>
+<div>
+  <h1>Sign up</h1>
+</div>
+<div class="card" >
+  <div class="card-header">Register</div>
+    <div class="card-body">
+     <form class="form-horizontal" action="/sign-up" method="POST">
 
-<form action="/sign-up" method="POST">
-  <label for="input-name">Name</label>
-  <input type="text" id="input-name" name="name" placeholder="Your Name" />
-  <label for="input-email">Email</label>
-  <input type="email" id="input-email" name="email" placeholder="Your Email" />
-  <label for="input-password">Password</label>
-  <input type="password" name="password" id="input-password" placeholder="A Strong Password" />
-  <button>Sign Up</button>
-</form>
+       <div class="form-group">
+        <label for="name" class="cols-sm-2 control-label">Your Name</label>
+          <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" id="input-name" name="name" placeholder="Enter your Name">
+                                            </div>
+          </div>
+        </div>
+       <div class="form-group">
+      <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                 <div class="cols-sm-10">
+                <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                             <input type="text" class="form-control" id="input-email" name="email" placeholder="Enter your Email">
+                          </div>
+                                        </div>
+        </div>
+       <div class="form-group">
+                                        <label for="password" class="cols-sm-2 control-label">Password</label>
+                                        <div class="cols-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                <input type="password" class="form-control" name="password" id="input-password" placeholder="Enter your Password">
+                                            </div>
+                                        </div>
+        </div>
+   <button class="btn btn-lg btn-primary btn-block">Register</button>
+      <div class="login-register">
+         <a href="/sign-in">Login</a>
+         </div>
+      </form>
+    </div>
+</div>
